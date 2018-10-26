@@ -1,6 +1,7 @@
 package com.soft.chapter2;
 
 /**
+ * 模板模式（Template模式）
  * 父类实现算法，子类实现细节
  *
  * @author zxlei1
@@ -9,26 +10,27 @@ package com.soft.chapter2;
 abstract class DiaGram {
 
     protected char c;
-    public DiaGram(char c){
-        this.c=c;
+
+    public DiaGram(char c) {
+        this.c = c;
     }
 
     abstract protected void print(int size);
 
     abstract protected void printCount(String msg);
 
-    public final void display(String msg){
-        int len=msg.getBytes().length;
+    public final void display(String msg) {
+        int len = msg.getBytes().length;
         print(len);
         printCount(msg);
         print(len);
     }
 }
 
-class starDiaGram extends DiaGram{
+class starDiaGram extends DiaGram {
 
-    public starDiaGram(char c){
-       super(c);
+    public starDiaGram(char c) {
+        super(c);
     }
 
     @Override
@@ -47,9 +49,9 @@ class starDiaGram extends DiaGram{
     }
 }
 
-public class TemplateTest{
-    public static void main(String [] args){
-        DiaGram d1=new starDiaGram('*');
+public class TemplateTest {
+    public static void main(String[] args) {
+        DiaGram d1 = new starDiaGram('*');
         d1.display("wangwenjun");
     }
 }

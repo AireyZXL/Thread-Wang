@@ -1,13 +1,13 @@
 package com.soft.chapter2;
 
 /**
+ * 多线程测试
  * 线程的交替运行
- *
  *
  * @author zxlei1
  * @date 2018/8/24 16:40
  */
-public class ThreadTest extends Thread {
+public class MultThreadTest extends Thread {
 
     private final static int DEFAULT_VALUE=100;
 
@@ -15,11 +15,11 @@ public class ThreadTest extends Thread {
 
     private String threadName="";
 
-    public ThreadTest(String threadName){
+    public MultThreadTest(String threadName){
        this(threadName,DEFAULT_VALUE);
     }
 
-    public ThreadTest(String threadName,int defaultValue){
+    public MultThreadTest(String threadName, int defaultValue){
         this.maxValue=defaultValue;
         this.threadName=threadName;
     }
@@ -34,8 +34,8 @@ public class ThreadTest extends Thread {
     }
 
     public static void main(String [] args){
-        ThreadTest t1=new ThreadTest("t1");
-        ThreadTest t2=new ThreadTest("t2",200);
+        MultThreadTest t1=new MultThreadTest("t1");
+        MultThreadTest t2=new MultThreadTest("t2",200);
         t1.start();
         t2.start();
     }
