@@ -1,4 +1,4 @@
-package com.soft.chapter;
+package com.soft.chapter2;
 
 /**
  * 父类实现算法，子类实现细节

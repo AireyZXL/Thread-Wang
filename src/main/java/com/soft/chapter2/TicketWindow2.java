@@ -1,4 +1,4 @@
-package com.soft.chapter;
+package com.soft.chapter2;
 
 /**
  * 通过 Runnable 接口实现第三版

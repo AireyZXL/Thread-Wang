@@ -1,4 +1,4 @@
-package com.soft.chapter;
+package com.soft.chapter2;
 
 /**
  * 银行排队叫号程序第一版

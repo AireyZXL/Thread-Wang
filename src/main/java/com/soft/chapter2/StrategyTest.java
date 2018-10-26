@@ -1,4 +1,4 @@
-package com.soft.chapter;
+package com.soft.chapter2;
 
 /**
  * 策略模式的实现

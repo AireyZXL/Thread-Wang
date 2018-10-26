@@ -1,4 +1,4 @@
-package com.soft.chapter;
+package com.soft.chapter2;
 
 /**
  * 线程的运行步骤
