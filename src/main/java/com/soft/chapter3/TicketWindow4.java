@@ -20,11 +20,11 @@ public class TicketWindow4 implements Runnable {
     }
 
     private synchronized boolean ticket() {
-        if (max_value > 100) {
+        if (max_value > 500) {
             return true;
         }
         try {
-            Thread.sleep(10);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

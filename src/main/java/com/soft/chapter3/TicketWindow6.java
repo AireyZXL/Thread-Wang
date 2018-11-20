@@ -19,7 +19,7 @@ public class TicketWindow6 implements Runnable {
         if (flag) {
             while (true) {
                 synchronized (TicketWindow6.class) {
-                    if (max_value > 500) {
+                    if (max_value > 5000) {
                         break;
                     }
                     try {
@@ -41,7 +41,7 @@ public class TicketWindow6 implements Runnable {
 
 
     private synchronized static boolean ticket() {
-        if (max_value > 500) {
+        if (max_value > 5000) {
             return true;
         }
         try {
